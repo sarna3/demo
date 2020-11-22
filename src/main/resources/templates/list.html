@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>联系人列表</title>
+</head>
+<body>
+    <div>
+        <h4>联系人列表</h4>
+        <table border="1" width="30%" >
+            <tr>
+                <td>姓&emsp14;名：<span th:text="${session.name}"></span></td>
+            </tr>
+            <tr>
+                <td>电&emsp14;话：<span th:text="${session.tel}"></span></td>
+            </tr>
+            <tr>
+                <td>邮&emsp14;箱：<span th:text="${session.email}"></span></td>
+            </tr>
+            <tr>
+                <td>住&emsp14;址：<span th:text="${session.address}"></span></td>
+            </tr>
+            <tr>
+                <td>qq号：<span th:text="${session.qq}"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <form action="/add.html">
+            <button> 添加 </button>
+        </form>
+
+        <form action="/change.html">
+            <button> 编辑 </button>
+        </form>
+
+        <form action="/delete.html">
+            <button> 删除 </button>
+        </form>
+    </div>
+</body>
+</html>
